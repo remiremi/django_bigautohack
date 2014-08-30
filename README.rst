@@ -25,9 +25,11 @@ This simple django app makes this hack less of pain. Running
 
 ::
 
-    $ python manage.py myapp.MyModel
+    $ python manage.py bigautohack myapp.MyModel
 
-Will run the needed ``ALTER TABLE`` commands, turning the database column for MyModel's primary key into a big integer, as well as all columns referencing MyModel.
+Will run the needed ``ALTER TABLE`` commands, turning the database column for ``MyModel``'s primary key into a big integer, as well as all columns referencing ``MyModel``.
+
+To install simply run ``pip install django_bigautohack`` and add ``bigautohack`` to your ``INSTALLED_APPS``.
 
 Limitation
 ==========

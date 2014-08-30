@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import os
 from setuptools import setup, find_packages
 
@@ -13,11 +15,11 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
-    description='Alter the database tables to use a big int for primary key.',
+    description='Nice working solution to make up for the absence of BigAutoField in django (#14286).',
     long_description=README,
-    url='http://www.example.com/',
-    author='Your Name',
-    author_email='yourname@example.com',
+    url='https://github.com/Remiremi/django_bigautohack',
+    author='Rémi Koenig',
+    author_email='remi.koenig@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
